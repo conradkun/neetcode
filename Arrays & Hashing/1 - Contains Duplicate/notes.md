@@ -1,4 +1,4 @@
-# 217. [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/)
+# 217. [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
 
 Given an integer array `nums`, return `true` if any value appears at least twice in the array, and return `false` if every element is distinct.
 
@@ -21,6 +21,11 @@ This feature from `C++11` implements a set as a hash table. Below are some key d
 - `unordered_set` has average lookup complexity of `O(1)` (and is faster on average for most operations), but `set` has the *best worst case complexity*, for example for `insert` (`O(log n)` vs `O(n)`).
 - `set` maintains a *sorted representation* of the elements, which can be useful in some cases.
 - two instances of `set` can be *compared lexicographically* with `<`, `>`, `<=`, etc...  
+
+### Inserting `n` elements in an empty red-black tree
+
+This is relevant and not at all trivial (are we sure it's faster than the hash map? In worst case, it is not). Note that the first insertion is `O(1)`, and every other insertion is `O(log x)`, if we are inserting the `x + 1`th element. Adding up `log(x)` from 0 to `n` is equal to `log(n!)` by logarithm laws. By [Stirling's approximation](https://en.wikipedia.org/wiki/Stirling%27s_approximation), this is `O(n log n)`.
+
 
 ### Radix sort / bucket sort
 
