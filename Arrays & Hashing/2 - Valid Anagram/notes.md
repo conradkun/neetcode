@@ -6,7 +6,7 @@ An *Anagram* is a word or phrase formed by rearranging the letters of a differen
 
 ## Thought process
 
-Create a map (dictionary) where the keys are characters and the values are their counts. The map, `u`, increases the counter when iterating over `s`, and decreases it when iterating over `t`. Then we just check that all the entries are 0. Time-complexity `O(n)` (the number of elements in the map is basically constant since it's bounded above by 26, or it can be implemented as a list of 26 ints), space-complexity `O(1)`.
+Create a map (dictionary) where the keys are characters and the values are their counts. The map, `u`, increases the counter when iterating over `s`, and decreases it when iterating over `t`. Then we just check that all the entries are 0. Time-complexity $O(n)$ (the number of elements in the map is basically constant since it's bounded above by 26, or it can be implemented as a list of 26 ints), space-complexity $O(1)$.
 
 Alternatively sort both strings and compare them.
 
