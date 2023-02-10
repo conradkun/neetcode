@@ -14,10 +14,10 @@ Can be made $O(1)$ if we do it in place but this problem is not worth rewriting 
 
 The main takeaways were handy functions from the `std`.
 
-# `char` id
+### `char` id
 
 We can use `std::isalnum` to check if a `string` is alphanumerical, `std::isalpha` to check if it is a letter and `std::isdigit` to check if it is a number.
 
-# `char` manipulation
+### `char` manipulation
 
 We can change to lowercase with `std::tolower`, and it will automatically cast to `char` if we pass it the argument `std::locale`.
