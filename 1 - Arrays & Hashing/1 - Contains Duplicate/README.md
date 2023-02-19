@@ -24,7 +24,7 @@ This feature from `C++11` implements a set as a hash table. Below are some key d
 
 ### Inserting $n$ elements in an empty red-black tree
 
-This is relevant and not at all trivial (are we sure it's faster than the hash map? In worst case, it is not). Note that the first insertion is $O(1)$, and every other insertion is $O(\log x)$, if we are inserting the $x + 1$-th element. Adding up $\log(x)$ from 0 to $n$ is equal to $\log n!$ by \logarithm laws. By [Stirling's approximation](https://en.wikipedia.org/wiki/Stirling%27s_approximation), this is $O(n \log n)$.
+This is relevant and not at all trivial (are we sure it's faster than the hash map? In worst case, it is not). Note that the first insertion is $O(1)$, and every other insertion is $O(\log x)$, if we are inserting the $x + 1$-th element. Adding up $\log(x)$ from 0 to $n$ is equal to $\log n!$ by logarithm laws. By [Stirling's approximation](https://en.wikipedia.org/wiki/Stirling%27s_approximation), this is $O(n \log n)$.
 
 
 ### Radix sort / bucket sort
