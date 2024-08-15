@@ -1,4 +1,4 @@
-# 347. [String Encode and Decode](https://neetcode.io/problems/string-encode-and-decode)
+# 271. [String Encode and Decode](https://leetcode.com/problems/encode-and-decode-strings/description/)
 
 Design an algorithm to encode a list of strings to a single string. The encoded string is then decoded back to the original list of strings.
 
