@@ -8,7 +8,7 @@ You can return the answer in any order.
 
 ## Thought process
 
-Sort the vector to iterate it with two pointers from each end. If the sum of the elements pointed at is the target, we are done. If it's too little, increase the lower pointer, if it's too small, decrease the upper pointer. Since we have to return the original indices, we keep a vector of sorted indices instead of sorting the original array. Time-complexity $O(n \log n)$, space-complexity $O(n)$.
+Sort the vector to iterate it with two pointers from each end. If the sum of the elements pointed at is the target, we are done. If it's too little, increase the lower pointer, if it's too big, decrease the upper pointer. Since we have to return the original indices, we keep a vector of sorted indices instead of sorting the original array. Time-complexity $O(n \log n)$, space-complexity $O(n)$.
 
 Alternatively, create a map that inserts the elements in `nums` as keys and the respective indices as values. In the same loop, check if the key `target - nums[i]` is in the map, and if so return the index. Time-complexity $O(n)$ (amortized), space-complexity $O(n)$.
 
