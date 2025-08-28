@@ -18,7 +18,7 @@ This feature from `C++11` implements a set as a hash table. Below are some key d
 
 - `set` is implemented as a red-black tree, while `unordered_set` is a hash map. All other properties derive from this.
 - `set` uses *less memory* than `unordered_set` to store the same number of elements.
-- `unordered_set` has average lookup complexity of $O(1)$ (and is faster on average for most operations), but `set` has the *best worst case complexity*, for example for `insert` ($O(\log n)$ vs $O(n)$).
+- `unordered_set` has average lookup complexity of $O(1)$ (and is faster on average for most operations), but `set` has the *best worst case complexity*, for example for `insert` ( $O(\log n)$ vs $O(n)$ ).
 - `set` maintains a *sorted representation* of the elements, which can be useful in some cases.
 - two instances of `set` can be *compared lexicographically* with `<`, `>`, `<=`, etc...  
 
