@@ -6,7 +6,7 @@ You must write an algorithm that runs in $O(n)$ time.
 
 ## Thought process
 
-We create a hash map with `int` keys and `bool` values that will store a set of the numbers present in `nums`. Then we iterate over `nums` and for each element $n$ we check if it is the start of a sequence (by checking whether $n - 1$ is in the set). If it isn't we skip it, if it is we follow the sequence and measure its length (by querying $n + 1$ successively). We keep track of the longest sequence and output it. The time comlexity is $O(n)$ and the space complexity is also $O(n)$.
+We create a hash map with `int` keys and `bool` values that will store a set of the numbers present in `nums`. Then we iterate over `nums` and for each element $n$ we check if it is the start of a sequence (by checking whether $n - 1$ is in the set). If it isn't we skip it, if it is we follow the sequence and measure its length (by querying $n + 1$ successively). We keep track of the longest sequence and output it. The time complexity is $O(n)$ and the space complexity is also $O(n)$.
 
 ## Take-aways
 
